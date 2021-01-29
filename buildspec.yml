@@ -6,6 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region us-east-1 --no-include-email)
+      - docker login -u adam535 -p sozowater123
       - REPOSITORY_URI=466807463245.dkr.ecr.us-east-1.amazonaws.com/test-repo
   build:
     commands:
