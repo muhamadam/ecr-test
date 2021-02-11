@@ -1,2 +1,2 @@
 import 'dotenv/config.js'
-console.log(process.env.TEST);
+console.log("I was changed!!");
